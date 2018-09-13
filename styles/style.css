@@ -1,0 +1,187 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Ubuntu', sans-serif;*/
+    color: white;
+    border-radius: 3px;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+body {
+    background: #111;
+    margin: 0;
+}
+
+
+
+button:focus {
+    outline: 0;
+}
+
+#wrap {
+    width: 825px;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    /*box-shadow: rgb(0, 0, 0) 0.838276px 0.838276px 0px, rgb(0, 0, 0) 1.83828px 1.83828px 0px, rgb(0, 0, 0) 2.83828px 2.83828px 0px, rgb(0, 0, 0) 3.83828px 3.83828px 0px, rgb(0, 0, 0) 4.83828px 4.83828px 0px, rgb(0, 0, 0) 5.83828px 5.83828px 0px, rgb(0, 0, 0) 6.83828px 6.83828px 0px, rgb(0, 0, 0) 7.83828px 7.83828px 0px, rgb(0, 0, 0) 8.83828px 8.83828px 0px, rgb(0, 0, 0) 9.83828px 9.83828px 0px, rgb(0, 0, 0) 10.8383px 10.8383px 0px;*/
+}
+
+#studio {
+    background: rgba(255, 48, 83, 1);
+    background: -moz-linear-gradient(-45deg, rgba(255, 48, 83, 1) 0%, rgba(143, 35, 53, 1) 39%, rgba(20, 20, 20, 1) 82%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255, 48, 83, 1)), color-stop(39%, rgba(143, 35, 53, 1)), color-stop(82%, rgba(20, 20, 20, 1)));
+    background: -webkit-linear-gradient(-45deg, rgba(255, 48, 83, 1) 0%, rgba(143, 35, 53, 1) 39%, rgba(20, 20, 20, 1) 82%);
+    background: -o-linear-gradient(-45deg, rgba(255, 48, 83, 1) 0%, rgba(143, 35, 53, 1) 39%, rgba(20, 20, 20, 1) 82%);
+    background: -ms-linear-gradient(-45deg, rgba(255, 48, 83, 1) 0%, rgba(143, 35, 53, 1) 39%, rgba(20, 20, 20, 1) 82%);
+    background: linear-gradient(135deg, rgba(255, 48, 83, 1) 0%, rgba(143, 35, 53, 1) 39%, rgba(20, 20, 20, 1) 82%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3053', endColorstr='#141414', GradientType=1);
+    height: 545px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    margin-top: 10px;
+}
+
+#helper{
+
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    height: 200px;
+    background: #212121;
+
+}
+
+/* Title spans */
+.title{
+    font-size: 30px;
+    margin: 30px;
+    top: 15px;
+    padding: 10px;
+    position: relative;
+}
+
+/* Description type text */
+.desc{
+    display: block;
+    margin: 30px;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+
+
+#title {
+    font-size: 30px;
+}
+
+#canvas {
+    right: 25px;
+    float: right;
+    position: relative;
+    display: block;
+    top: 25px;
+    background: black;
+    transition: all .25s;
+}
+
+#canvas:hover{
+    box-shadow: 0px 0px 10px rgba(0,0,0,.6);
+}
+
+#control-panel {
+    position: absolute;
+    height: 500px;
+    width: 250px;
+    top: 25px;
+    left: 25px;
+    background: #111;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.6);
+    transition: all .25s;
+}
+
+#control-panel:hover{
+    box-shadow: 0px 0px 10px rgba(0,0,0,.6);
+}
+
+
+#painting-title {
+    width: 200px;
+    height: 40px;
+    border: none;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background: #f2f2f2;
+}
+
+#palette-chooser {
+    color: black;
+    width: 230px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.palette-option {
+    color: black;
+    cursor: pointer;
+}
+
+#palette {
+    position: absolute;
+    height: 300px;
+    width: 230px;
+    top: 110px;
+    left: 10px;
+    background: #232323;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.color-option {
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: all .1s;
+}
+
+.color-option:hover {
+    transform: scale(1.08);
+}
+
+.color-option:active {
+    transform: scale(0.95);
+}
+
+.color-optio:focus {
+    /*     border-width: 5px;
+    border-style: solid;
+    border-color: red;
+    border:red; */
+}
+
+
