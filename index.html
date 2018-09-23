@@ -9,68 +9,35 @@
     <link rel="stylesheet" href="styles/style.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu" rel="stylesheet">
+    
+    <!-- Socket.io -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
     <title>Art Auction</title>
+
 </head>
 
 <body>
 
     <!-- Studio Page -->
 
-    <div id="wrap">
+    <div id="login-page">
 
+        <img src="img/logo.png" alt="" draggable="false" id="logo-header">
 
-        <span id="title">Art Auction | Studio</span>
-        <div id="studio">
+        <input type="text" class="input-field" placeholder="Username" oninput="test_account()" id="username" maxlength="20">
+        <input type="password" placeholder="Password" class="input-field" id="password" maxlength="300">
 
-            <div id="control-panel">
-
-                <!-- Paiting title input -->
-                <input type="text" id="painting-title" placeholder="Painting name...">
-                
-                <!-- Palette chooser -->
-                <select name="" id="palette-chooser">
-                    <option value="" class="palette-option">Palette 1</option>
-                    <option value="" class="palette-option">Palette 2</option>
-                    <option value="" class="palette-option">Palette 3</option>
-                    <option value="" class="palette-option">Palette 4</option>
-                </select>
-                
-                <!-- Palette -->
-                <div id="palette">
-                    <button class="color-option" onclick="chooseColor(this.id)"></button>
-                    <button class="color-option" onclick="chooseColor(this.id)"></button>
-                    <button class="color-option" onclick="chooseColor(this.id)"></button>
-                    <button class="color-option" onclick="chooseColor(this.id)"></button>
-                    <button class="color-option" onclick="chooseColor(this.id)"></button>
-                    <button class="color-option" onclick="chooseColor(this.id)"></button>
-                    <button class="color-option" onclick="chooseColor(this.id)"></button>
-                    <button class="color-option" onclick="chooseColor(this.id)"></button>
-                    <button class="color-option" onclick="chooseColor(this.id)"></button>
-                    <button class="color-option" onclick="chooseColor(this.id)"></button>
-                    <button class="color-option" onclick="chooseColor(this.id)"></button>
-                    <button class="color-option" onclick="chooseColor(this.id)"></button>
-
-                </div>
-
-            </div>
-
-            <!-- Painting -->
-            <canvas id="canvas" height="500" width="500">
-
-        </div>
-
-        <div id="helper">
-        
-            <span class="title">Helper!</span>
-            <span class="desc">Choose a color from the palette by clicking a desired color. Draw with left click, and fill with right click!</span>
-        </div>
+        <span id="button-wrapper">
+            <button class="btn" id="log" disabled onclick="log_in()" title="Please enter a username.">Log in</button> 
+            <button class="btn" id="sign" disabled onclick="sign_up()" title="Please enter a username.">Sign up</button>
+        </span>
 
     </div>
 
     <!-- Hex color sorter for paletts -->
     <script src="js/hexSorter.min.js"></script>
     <!-- Main codebase -->
-    <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
 
 </body>
 

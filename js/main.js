@@ -14,7 +14,7 @@ var mousePos = {
 };
 
 const paletts = [
-    ["fefefe", "ffe618", "ffc82b", "f36f27", "de2825", "db1c3d", "e01185", "532e8e", "15bae7", "56a647", "53602b", "#111"]
+    ["fefefe", "#8f8b8d", "#000000", "#5a3529", "#ed224d", "#b61f23", "#e85e1f", "#ffd70e", "#1f5729", "#0046c9", "#0cb6c7", "#6a417c"]
 ];
 
 var currentPalette = undefined;
@@ -33,8 +33,8 @@ function loadPalette(palette) {
         if (currentPalette[i][0] != "#") currentPalette[i] = "#" + currentPalette[i];
     }
 
-    // Sort palette
-    currentPalette = sortPalette(currentPalette);
+    /* // Sort palette
+    currentPalette = sortPalette(currentPalette); */
 
     var paletteProgress = 0;
     var paletteElements = document.getElementsByClassName("color-option");
