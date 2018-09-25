@@ -18,19 +18,31 @@
 
 <body>
 
-    <!-- Studio Page -->
+    <!-- Log in/Sign up Page -->
 
     <div id="login-page">
 
-        <img src="img/logo.png" alt="" draggable="false" id="logo-header">
+        <img src="img/art-auction-2.png" alt="" draggable="false" id="logo-header">
 
-        <input type="text" class="input-field" placeholder="Username" oninput="test_account()" id="username" maxlength="20">
+        <div id="index-about">
+
+           <h1>Welcome to Art Auction (Beta)</h1>
+           <h2>Here you can create, sell and display your finest art.<br> It's fun for the whole family</h2>
+
+        </div>
+
+        <input type="text" class="input-field" placeholder="Username" oninput="test_account()" id="username" maxlength="12">
         <input type="password" placeholder="Password" class="input-field" id="password" maxlength="300">
 
         <span id="button-wrapper">
             <button class="btn" id="log" disabled onclick="log_in()" title="Please enter a username.">Log in</button> 
             <button class="btn" id="sign" disabled onclick="sign_up()" title="Please enter a username.">Sign up</button>
         </span>
+
+        <div id="connected-message">
+            <span id="connected-text">Connecting to server...</span>
+            <div id="connected-status"></div>
+        </div>
 
     </div>
 

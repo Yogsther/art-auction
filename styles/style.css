@@ -19,6 +19,7 @@
 body {
     background: #111;
     margin: 0;
+    padding: 0;
 }
 
 
@@ -27,7 +28,7 @@ button:focus {
     outline: 0;
 }
 
-#wrap {
+#studio-wrap {
     width: 825px;
     margin: 0 auto;
     position: relative;
@@ -53,7 +54,7 @@ button:focus {
     margin-top: 10px;
 }
 
-#helper{
+#helper {
 
     width: 100%;
     margin: 0 auto;
@@ -66,7 +67,7 @@ button:focus {
 }
 
 /* Title spans */
-.title{
+.title {
     font-size: 30px;
     margin: 30px;
     top: 15px;
@@ -75,7 +76,7 @@ button:focus {
 }
 
 /* Description type text */
-.desc{
+.desc {
     display: block;
     margin: 30px;
     margin-top: 15px;
@@ -98,8 +99,8 @@ button:focus {
     transition: all .25s;
 }
 
-#canvas:hover{
-    box-shadow: 0px 0px 10px rgba(0,0,0,.6);
+#canvas:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .6);
 }
 
 #control-panel {
@@ -113,8 +114,8 @@ button:focus {
     transition: all .25s;
 }
 
-#control-panel:hover{
-    box-shadow: 0px 0px 10px rgba(0,0,0,.6);
+#control-panel:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .6);
 }
 
 
@@ -177,17 +178,10 @@ button:focus {
     transform: scale(0.95);
 }
 
-.color-optio:focus {
-    /*     border-width: 5px;
-    border-style: solid;
-    border-color: red;
-    border:red; */
-}
-
-#login-page{
+#login-page {
     width: 95%;
     max-width: 550px;
-    height: 70vh;
+    height: 700px;
     border-radius: 0px;
     background: rgb(32, 32, 32);
     display: block;
@@ -195,7 +189,33 @@ button:focus {
     margin-top: 25px;
 }
 
-.input-field{
+h1{
+    font-size: 20px;
+    margin: 0px;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+
+h2{
+    font-size: 16px;
+    margin: 0px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+#index-about{
+    width: 80%;
+    padding: 1.5%;
+    background: rgba(128, 128, 128, 0.246);
+    margin: 0 auto;
+    display: block;
+}
+
+#username{
+    margin-top: 50px !important; 
+}
+
+.input-field {
     color: black;
     width: 80%;
     height: 40px;
@@ -211,13 +231,14 @@ button:focus {
     position: relative;
 }
 
-#logo-header{
+#logo-header {
     margin: 0 auto;
     display: block;
-    width: 70%;
+    width: 40%;
 }
 
-.btn{
+
+.btn {
     width: 48%;
     border: none;
     height: 48px;
@@ -229,19 +250,165 @@ button:focus {
     padding: 1.5%;
 }
 
-.btn:disabled{
+.btn:disabled {
     background: #3d3d3d;
     color: rgb(209, 209, 209);
 }
 
-#sign{
+#sign {
     float: right;
 }
 
-#button-wrapper{
+#button-wrapper {
     top: -15px;
     width: 83%;
     display: block;
     position: relative;
     margin: 0 auto;
+}
+
+#connected-message {
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    width: 209px;
+}
+
+#connected-status {
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    background: rgb(252, 203, 45);
+    display: inline-block;
+    top: 8px;
+    margin-left: 5px;
+    position: relative;
+    transition: all .5s;
+}
+
+#header {
+    position: relative;
+    width: 100%;
+
+    border-radius: 0px 0px 0px 10px;
+    height: 100px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fc8479+0,ff4476+100 */
+    background: rgb(255, 40, 69);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+#logged-in-box {
+    width: 150px;
+    height: 80px;
+    background: rgba(17, 17, 17, 0.445);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+#username-header {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* #logout{
+    display: block;
+    position: absolute;
+    top: 55px;
+    text-align: right;
+    left: 10px;
+    text-decoration: none;
+} */
+
+#wallet-display {
+    display: block;
+    position: absolute;
+    top: 35px;
+    right: 10px;
+}
+
+#profile-image {
+    height: 60px;
+    border-radius: 100px;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+}
+
+
+#header-logo {
+    height: 120px;
+    top: -10px;
+    position: relative;
+    left: 10px;
+}
+
+#header-options {
+    position: absolute;
+    width: 50%;
+    top: 0px;
+    left: 150px;
+    height: 100%;
+    display: inline-block;
+}
+
+.header-option {
+    display: inline-block;
+    height: 100%;
+    width: 32%;
+    text-decoration: none;
+    text-align: center;
+    line-height: 90px;
+    font-size: 20px;
+    color: black;
+    border-radius: 0px;
+}
+
+.header-option:hover {
+    background: rgba(0, 0, 0, 0.205);
+}
+
+#wrap {
+    height: 95vh;
+    min-height: 700px;
+    width: 90%;
+    max-width: 900px;
+    min-width: 650px;
+    background: rgb(32, 32, 32);
+    border-radius: 3px;
+    margin: 0 auto;
+}
+
+
+::-webkit-scrollbar {
+    background-color: black;
+    width: 8px;
+    border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3a3a3a;
+    border-radius: 3px;
+}
+
+#big-profile{
+    width: 80%;
+    height: 200px;
+    background: #ff2845;
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+    border-radius: 5px;
+   
+}
+
+#username-title{
+    font-size: 4em;
+    top: 50px;
+    margin-left: 40px;
+    position: relative;
+    
 }

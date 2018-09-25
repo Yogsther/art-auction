@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Link styles -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu" rel="stylesheet">
+
+    <!-- Socket.io -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+    <title>Art Auction</title>
+
+</head>
+
+<body>
+
+    <div id="wrap">
+        <div id="header">
+            <img src="img/art-auction-2.png" alt="Logo" id="header-logo" draggable="false">
+
+            <div id="header-options">
+                <a href="home.html" class="header-option">Home</a>
+                <a href="studio.html" class="header-option">Studio</a>
+                <a href="#" class="header-option">Market</a>
+            </div>
+
+            <div id="logged-in-box">
+                <span id="username-header"></span>
+                <span id="wallet-display"></span>
+
+                <!-- <a href="javascript:logout()" id="logout">Logout</a> -->
+                <!-- <img src="img/profile.jpg" alt="Profile picture" id="profile-image" draggable="false"> -->
+            </div>
+
+        </div>
+
+        <!-- Wrap -->
+
+        <div id="big-profile">
+
+            <span id="username-title">Username</span>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Hex color sorter for paletts -->
+    <script src="js/hexSorter.min.js"></script>
+    <!-- Main codebase -->
+    <script src="js/home.js"></script>
+
+</body>
+
+</html>
